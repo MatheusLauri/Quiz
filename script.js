@@ -78,47 +78,47 @@ const q5 = {
 // adicionar perguntas nesse mesmo modelo!!!
 const q6 = {
     numQuestao   : 6,
-    pergunta     : "",
-    alternativaA : "",
-    alternativaB : "",
-    alternativaC : "",
-    correta      : "",
+    pergunta     : "Qual desses time nunca foi rebaixado?",
+    alternativaA : "Palmeiras",
+    alternativaB : "Flamengo",
+    alternativaC : "Grêmio",
+    correta      : "Flamengo",
 }
 
 const q7 = {
     numQuestao   : 7,
-    pergunta     : "",
-    alternativaA : "",
-    alternativaB : "",
-    alternativaC : "",
-    correta      : "",
+    pergunta     : "Em qual desses times Ronaldinho nunca jogou?",
+    alternativaA : "PSG",
+    alternativaB : "Flamengo",
+    alternativaC : "São Paulo",
+    correta      : "São Paulo",
 }
 
 const q8 = {
     numQuestao   : 8,
-    pergunta     : "",
-    alternativaA : "",
-    alternativaB : "",
-    alternativaC : "",
-    correta      : "",
+    pergunta     : "Qual desses times nunca ganhou uma Libertadores?",
+    alternativaA : "Corinthians",
+    alternativaB : "Flamengo",
+    alternativaC : "Fluminense",
+    correta      : "Fluminense",
 }
 
 const q9 = {
     numQuestao   : 9,
-    pergunta     : "",
-    alternativaA : "",
-    alternativaB : "",
-    alternativaC : "",
-    correta      : "",
+    pergunta     : "Qual desses jogadores ganhou mais titulos oficiais?",
+    alternativaA : "Messi",
+    alternativaB : "Daniel Alves",
+    alternativaC : "Ibrahimović",
+    correta      : "Daniel Alves",
 }
 
 const q10 = {
     numQuestao   : 10,
-    pergunta     : "",
-    alternativaA : "",
-    alternativaB : "",
-    alternativaC : "",
-    correta      : "",
+    pergunta     : "Qual o time com mais titulos mundiais?",
+    alternativaA : "Santos",
+    alternativaB : "Palmeiras",
+    alternativaC : "Corinthias",
+    correta      : "Santos",
 }
 
 // CONSTANTE COM UM ARRAY DE OBJETOS COM TODAS AS QUESTOES
@@ -187,7 +187,7 @@ function verificarSeAcertou(nQuestao, resposta) {
 
     // atualizar placar
     placar = pontos
-    instrucoes.textContent = "Pontos " + placar
+    instrucoes.textContent = "Pontos: " + placar
 
     // bloquear a escolha de opcoes
     bloquearAlternativas()
