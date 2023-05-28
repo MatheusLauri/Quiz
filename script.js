@@ -13,6 +13,8 @@ let pergunta   = document.querySelector('#pergunta')
 let a = document.querySelector('#a')
 let b = document.querySelector('#b')
 let c = document.querySelector('#c')
+let d = document.querySelector('#d')
+let e = document.querySelector('#e')
 
 // article com a class questoes
 let articleQuestoes = document.querySelector('.questoes')
@@ -27,6 +29,8 @@ const q0 = {
     alternativaA : "Alternativa A",
     alternativaB : "Alternativa B",
     alternativaC : "Alternativa C",
+    alternativaD : "Alternativa D",
+    alternativaE : "Alternativa E",
     correta      : "0",
 }
 
@@ -36,6 +40,8 @@ const q1 = {
     alternativaA : "Real Madrid",
     alternativaB : "Barcelona",
     alternativaC : "Chelsea",
+    alternativaD : "Roma",
+    alternativaE : "Bayern",
     correta      : "Real Madrid",
 }
 
@@ -45,6 +51,8 @@ const q2 = {
     alternativaA : "Palmeiras",
     alternativaB : "Corinthians",
     alternativaC : "Flamengo",
+    alternativaD : "São paulo",
+    alternativaE : "Santos",
     correta      : "Palmeiras",
 }
 
@@ -54,6 +62,8 @@ const q3 = {
     alternativaA : "Santos",
     alternativaB : "Flamengo",
     alternativaC : "Palmeiras",
+    alternativaD : "Internacional",
+    alternativaE : "Fluminense",
     correta      : "Palmeiras",
 }
 
@@ -63,6 +73,8 @@ const q4 = {
     alternativaA : "Corinthians",
     alternativaB : "Chelsea",
     alternativaC : "Real madrid",
+    alternativaD : "Roma",
+    alternativaE : "Tigres",
     correta      : "Corinthians",
 }
 
@@ -72,53 +84,65 @@ const q5 = {
     alternativaA : "Vasco",
     alternativaB : "Sport",
     alternativaC : "Avai",
+    alternativaD : "Palmeiras",
+    alternativaE : "Corinthians",
     correta      : "Avai",
 }
 
 // adicionar perguntas nesse mesmo modelo!!!
 const q6 = {
     numQuestao   : 6,
-    pergunta     : "Qual desses time nunca foi rebaixado?",
-    alternativaA : "Palmeiras",
-    alternativaB : "Flamengo",
-    alternativaC : "Grêmio",
-    correta      : "Flamengo",
+    pergunta     : "",
+    alternativaA : "",
+    alternativaB : "",
+    alternativaC : "",
+    alternativaD : "",
+    alternativaE : "",
+    correta      : "",
 }
 
 const q7 = {
     numQuestao   : 7,
-    pergunta     : "Em qual desses times Ronaldinho nunca jogou?",
-    alternativaA : "PSG",
-    alternativaB : "Flamengo",
-    alternativaC : "São Paulo",
-    correta      : "São Paulo",
+    pergunta     : "",
+    alternativaA : "",
+    alternativaB : "",
+    alternativaC : "",
+    alternativaD : "",
+    alternativaE : "",
+    correta      : "",
 }
 
 const q8 = {
     numQuestao   : 8,
-    pergunta     : "Qual desses times nunca ganhou uma Libertadores?",
-    alternativaA : "Corinthians",
-    alternativaB : "Flamengo",
-    alternativaC : "Fluminense",
-    correta      : "Fluminense",
+    pergunta     : "",
+    alternativaA : "",
+    alternativaB : "",
+    alternativaC : "",
+    alternativaD : "",
+    alternativaE : "",
+    correta      : "",
 }
 
 const q9 = {
     numQuestao   : 9,
-    pergunta     : "Qual desses jogadores ganhou mais titulos oficiais?",
-    alternativaA : "Messi",
-    alternativaB : "Daniel Alves",
-    alternativaC : "Ibrahimović",
-    correta      : "Daniel Alves",
+    pergunta     : "",
+    alternativaA : "",
+    alternativaB : "",
+    alternativaC : "",
+    alternativaD : "",
+    alternativaE : "",
+    correta      : "",
 }
 
 const q10 = {
     numQuestao   : 10,
-    pergunta     : "Qual o time com mais titulos mundiais?",
-    alternativaA : "Santos",
-    alternativaB : "Palmeiras",
-    alternativaC : "Corinthias",
-    correta      : "Santos",
+    pergunta     : "",
+    alternativaA : "",
+    alternativaB : "",
+    alternativaC : "",
+    alternativaD : "",
+    alternativaE : "",
+    correta      : "",
 }
 
 // CONSTANTE COM UM ARRAY DE OBJETOS COM TODAS AS QUESTOES
@@ -139,11 +163,15 @@ pergunta.textContent   = q1.pergunta
 a.textContent = q1.alternativaA
 b.textContent = q1.alternativaB
 c.textContent = q1.alternativaC
+d.textContent = q1.alternativaD
+e.textContent = q1.alternativaE
 
 // CONFIGURAR O VALUE INICIAL DA 1a QUESTAO COMPLETA
 a.setAttribute('value', '1A')
 b.setAttribute('value', '1B')
 c.setAttribute('value', '1C')
+d.setAttribute('value', '1D')
+e.setAttribute('value', '1E')
 
 // PARA MONTAR AS PROXIMAS QUESTOES
 function proximaQuestao(nQuestao) {
@@ -153,21 +181,29 @@ function proximaQuestao(nQuestao) {
     a.textContent = questoes[nQuestao].alternativaA
     b.textContent = questoes[nQuestao].alternativaB
     c.textContent = questoes[nQuestao].alternativaC
+    d.textContent = questoes[nQuestao].alternativaD
+    e.textContent = questoes[nQuestao].alternativaE
     a.setAttribute('value', nQuestao+'A')
     b.setAttribute('value', nQuestao+'B')
     c.setAttribute('value', nQuestao+'C')
+    d.setAttribute('value', nQuestao+'D')
+    e.setAttribute('value', nQuestao+'E')
 }
 
 function bloquearAlternativas() {
     a.classList.add('bloqueado')
     b.classList.add('bloqueado')
     c.classList.add('bloqueado')
+    d.classList.add('bloqueado')
+    e.classList.add('bloqueado')
 }
 
 function desbloquearAlternativas() {
     a.classList.remove('bloqueado')
     b.classList.remove('bloqueado')
     c.classList.remove('bloqueado')
+    d.classList.remove('bloqueado')
+    e.classList.remove('bloqueado')
 }
 
 function verificarSeAcertou(nQuestao, resposta) {
@@ -187,7 +223,7 @@ function verificarSeAcertou(nQuestao, resposta) {
 
     // atualizar placar
     placar = pontos
-    instrucoes.textContent = "Pontos: " + placar
+    instrucoes.textContent = "Pontos " + placar
 
     // bloquear a escolha de opcoes
     bloquearAlternativas()
@@ -221,10 +257,14 @@ function fimDoJogo() {
     a.textContent = ""
     b.textContent = ""
     c.textContent = ""
-
+    d.textContent = ""
+    e.textContent = ""
+    
     a.setAttribute('value', '0')
     b.setAttribute('value', '0')
     c.setAttribute('value', '0')
+    d.setAttribute('value', '0')
+    e.setAttribute('value', '0')
 
     // OCULTAR O ARTICLE DA QUESTAO
     articleQuestoes.style.display = 'none'
