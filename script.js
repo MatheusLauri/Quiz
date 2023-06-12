@@ -92,57 +92,57 @@ const q5 = {
 // adicionar perguntas nesse mesmo modelo!!!
 const q6 = {
     numQuestao   : 6,
-    pergunta     : "",
-    alternativaA : "",
-    alternativaB : "",
-    alternativaC : "",
-    alternativaD : "",
-    alternativaE : "",
-    correta      : "",
+    pergunta     : "Qual time campeão da champions 2023?",
+    alternativaA : "Man City",
+    alternativaB : "Real Madrid",
+    alternativaC : "Barcelona",
+    alternativaD : "Chelsea",
+    alternativaE : "Liverpoll",
+    correta      : "Man City",
 }
 
 const q7 = {
     numQuestao   : 7,
-    pergunta     : "",
-    alternativaA : "",
-    alternativaB : "",
-    alternativaC : "",
-    alternativaD : "",
-    alternativaE : "",
-    correta      : "",
+    pergunta     : "Quem foi conhecido por 1000 gols?",
+    alternativaA : "Pelé",
+    alternativaB : "Maradona",
+    alternativaC : "Cristiano Ronaldo",
+    alternativaD : "Messi",
+    alternativaE : "Biro Biro",
+    correta      : "Pelé",
 }
 
 const q8 = {
     numQuestao   : 8,
-    pergunta     : "",
-    alternativaA : "",
-    alternativaB : "",
-    alternativaC : "",
-    alternativaD : "",
-    alternativaE : "",
-    correta      : "",
+    pergunta     : "Qual a maior rivalidade futebol ?",
+    alternativaA : "Palmeiras x Corinthians",
+    alternativaB : "Santos x São paulo",
+    alternativaC : "Flamengo x Fluminense",
+    alternativaD : "Corinthians x Flamengo",
+    alternativaE : "Palmeiras x Flamengo",
+    correta      : "Palmeiras x Corinthians",
 }
 
 const q9 = {
     numQuestao   : 9,
-    pergunta     : "",
-    alternativaA : "",
-    alternativaB : "",
-    alternativaC : "",
-    alternativaD : "",
-    alternativaE : "",
-    correta      : "",
+    pergunta     : "Quem participa da união sinistra ?",
+    alternativaA : "Palmeiras, vasco, ateltico mg",
+    alternativaB : "Corinthians, fluminense,sport",
+    alternativaC : "São paulo,Flamengo, internacional",
+    alternativaD : "Palmeiras,Santos,Vasco",
+    alternativaE : "Gremio, Atletico, São paulo",
+    correta      : "Palmeiras, vasco, ateltico mg",
 }
 
 const q10 = {
     numQuestao   : 10,
-    pergunta     : "",
-    alternativaA : "",
-    alternativaB : "",
-    alternativaC : "",
-    alternativaD : "",
-    alternativaE : "",
-    correta      : "",
+    pergunta     : "Qual jogador que viveu em polemica ?",
+    alternativaA : "Ronaldinho Gaucho",
+    alternativaB : "Ronaldo Fenomeno",
+    alternativaC : "Cristiano Ronaldo",
+    alternativaD : "Romario",
+    alternativaE : "Kaka",
+    correta      : "Ronaldinho Gaucho",
 }
 
 // CONSTANTE COM UM ARRAY DE OBJETOS COM TODAS AS QUESTOES
