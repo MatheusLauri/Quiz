@@ -190,7 +190,7 @@ function proximaQuestao(nQuestao) {
     e.setAttribute('value', nQuestao+'E')
 }
 
-function bloquearAlternativas() {
+function bloquearQuestoes() {
     a.classList.add('bloqueado')
     b.classList.add('bloqueado')
     c.classList.add('bloqueado')
@@ -198,7 +198,7 @@ function bloquearAlternativas() {
     e.classList.add('bloqueado')
 }
 
-function desbloquearAlternativas() {
+function desbloquearQuestoes() {
     a.classList.remove('bloqueado')
     b.classList.remove('bloqueado')
     c.classList.remove('bloqueado')
@@ -206,7 +206,7 @@ function desbloquearAlternativas() {
     e.classList.remove('bloqueado')
 }
 
-function verificarSeAcertou(nQuestao, resposta) {
+function validarAcerto(nQuestao, resposta) {
 
     let numeroDaQuestao = nQuestao.value
     console.log("Questão " + numeroDaQuestao)
@@ -226,7 +226,7 @@ function verificarSeAcertou(nQuestao, resposta) {
     instrucoes.textContent = "Pontos " + placar
 
     // bloquear a escolha de opcoes
-    bloquearAlternativas()
+    bloquearQuestoes()
 
     setTimeout(function() {
         //respostaEsta.textContent = '...'
@@ -239,7 +239,7 @@ function verificarSeAcertou(nQuestao, resposta) {
             proximaQuestao(proxima)
         }
     }, 250)
-    desbloquearAlternativas()
+    desbloquearQuestoes()
 }
 
 function fimDoJogo() {
@@ -269,7 +269,7 @@ function fimDoJogo() {
     // OCULTAR O ARTICLE DA QUESTAO
     articleQuestoes.style.display = 'none'
 
-    setTimeout(function() {
+    setTimeout(function() { //global function
         pontos = 0 // zerar placar
         location.reload();
     }, 2000)
